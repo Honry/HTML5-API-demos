@@ -151,7 +151,7 @@
                   var orientationProperty = prefix + (prefix === '' ? 'o' : 'O') + 'rientation';
                   orientationElem.textContent = screen[orientationProperty];
                };
-               screen.addEventListener(prefix + 'orientationchange', onChangeHandler);
+               screen.orientation.addEventListener(prefix + 'orientationchange', onChangeHandler);
                onChangeHandler();
             }
          }
